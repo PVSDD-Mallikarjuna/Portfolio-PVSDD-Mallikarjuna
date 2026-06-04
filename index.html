@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>P V S D D Mallikarjuna | PrimeMOS</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#061428;
+color:white;
+overflow-x:hidden;
+}
+
+/* Animated Background */
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,212,255,.15),transparent 25%),
+radial-gradient(circle at 80% 30%,rgba(0,150,255,.15),transparent 25%),
+radial-gradient(circle at 50% 80%,rgba(0,212,255,.15),transparent 25%);
+animation:movebg 10s infinite alternate;
+z-index:-1;
+}
+
+@keyframes movebg{
+from{transform:translateY(0px);}
+to{transform:translateY(-50px);}
+}
+
+nav{
+position:sticky;
+top:0;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(15px);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:600;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+}
+
+.hero-content{
+max-width:900px;
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.profile{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #00d4ff;
+box-shadow:0 0 40px #00d4ff;
+}
+
+.logo{
+width:180px;
+margin-top:25px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-top:20px;
+color:#00d4ff;
+}
+
+.hero h2{
+margin-top:10px;
+color:#f4b400;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.1rem;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.research{
+background:#00d4ff;
+color:black;
+}
+
+.linkedin{
+background:#0077b5;
+color:white;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#00d4ff;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.1);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(12px);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(0,212,255,.3);
+}
+
+.skill{
+display:inline-block;
+background:#00d4ff;
+color:black;
+padding:10px 15px;
+border-radius:30px;
+margin:8px;
+font-weight:bold;
+}
+
+footer{
+padding:50px;
+text-align:center;
+background:#03101f;
+margin-top:50px;
+}
+
+footer h3{
+color:#00d4ff;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#research">Research</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="assets/founder.jpg" class="profile">
+
+<h1>PVSDD Mallikarjuna</h1>
+
+<img src="assets/Company.png" class="logo">
+
+<h2>Founder of PrimeMOS Research & Solutions</h2>
+
+<p>
+VLSI Engineer • Semiconductor Researcher • IEEE Published Author • Associate Member IETE
+</p>
+
+<p>
+Specialized in CMOS Design, Digital IC Design, Physical Design,
+OpenLane, SkyWater PDK, Cadence Virtuoso, FPGA Design and AI-Enabled VLSI.
+</p>
+
+<div class="buttons">
+
+<a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna"
+target="_blank"
+class="btn research">
+Explore Research
+</a>
+
+<a href="https://www.linkedin.com/in/p-v-s-d-d-mallikarjuna-9569b0298/"
+target="_blank"
+class="btn linkedin">
+LinkedIn
+</a>
+
+<a href="https://wa.me/918019847793?text=Hello%20Mallikarjuna,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+target="_blank"
+class="btn whatsapp">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+Founder of PrimeMOS Research & Solutions and Associate Member of IETE.
+Research-driven VLSI Engineer specializing in CMOS Design, Digital IC Design,
+ASIC Design, Physical Design and Semiconductor Research.
+
+Former DRDL Research Intern and IEEE Published Researcher.
+Passionate about AI-enabled chip design and democratizing semiconductor education.
+</div>
+</section>
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>B.Tech ECE</h3>
+<p>JNTUH</p>
+<p>2021 - 2025</p>
+<p>Minor in IoT</p>
+<p>First Class with Distinction</p>
+</div>
+
+<div class="card">
+<h3>Intermediate</h3>
+<p>Narayana Junior College</p>
+<p>95%</p>
+</div>
+
+<div class="card">
+<h3>SSC</h3>
+<p>SMBCV</p>
+<p>9.2 CGPA</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Founder & CEO</h3>
+<p>PrimeMOS Research & Solutions</p>
+</div>
+
+<div class="card">
+<h3>Research Intern</h3>
+<p>DRDL (DRDO)</p>
+<p>Chaff Dispersion Simulation using MATLAB</p>
+</div>
+
+<div class="card">
+<h3>Project Intern</h3>
+<p>ADVI Group of Companies</p>
+<p>STM32, PSoC & Embedded Systems</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="research">
+
+<h2 class="section-title">Research</h2>
+
+<div class="card">
+
+<h3>IEEE Publication</h3>
+
+<p>
+Optimized 4-bit ALU for Enhanced Speed:
+A CMOS-Based Approach
+</p>
+
+<br>
+
+<p>
+1 IEEE Publication and 8 Research Works available on ResearchGate.
+</p>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">4-bit ALU Design</div>
+<div class="card">Plasmonic Ring Counter</div>
+<div class="card">ECG Healthcare Monitoring</div>
+<div class="card">Smart Driverless Vehicle</div>
+<div class="card">Heart Rate & SpO2 Monitor</div>
+<div class="card">Satellite Simulation MATLAB</div>
+<div class="card">Helical Antenna Design</div>
+<div class="card">Chaff Dispersion Simulation</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="card">
+
+<span class="skill">VLSI Design</span>
+<span class="skill">CMOS</span>
+<span class="skill">ASIC Design</span>
+<span class="skill">Cadence Virtuoso</span>
+<span class="skill">Verilog</span>
+<span class="skill">Vivado</span>
+<span class="skill">OpenLane</span>
+<span class="skill">SkyWater PDK</span>
+<span class="skill">MATLAB</span>
+<span class="skill">Python</span>
+<span class="skill">STM32</span>
+<span class="skill">PSoC</span>
+<span class="skill">IoT</span>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p>Email: mallik.palaparthi3@gmail.com</p>
+
+<br>
+
+<p>WhatsApp: +91 8019847793</p>
+
+<br>
+
+<p>LinkedIn & ResearchGate available above.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>P V S D D Mallikarjuna</h3>
+
+<p>Founder | PrimeMOS Research & Solutions</p>
+
+<p>Advancing Semiconductor Innovation Through Research</p>
+
+</footer>
+
+</body>
+</html>
