@@ -131,7 +131,16 @@ color:white;
 background:#25d366;
 color:white;
 }
+.primemos{
+background:linear-gradient(135deg,#ff8c00,#f4b400);
+color:white;
+box-shadow:0 0 20px rgba(255,140,0,.5);
+}
 
+.primemos:hover{
+box-shadow:0 0 30px rgba(255,140,0,.8);
+transform:translateY(-5px) scale(1.05);
+}
 section{
 padding:80px 10%;
 }
