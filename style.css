@@ -1,47 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
-font-family:'Segoe UI',sans-serif;
-}
-
-:root{
---primary:#00d4ff;
---secondary:#0077ff;
---dark:#061428;
---card:#0d2238;
---text:#ffffff;
 }
 
 body{
-background:linear-gradient(
-135deg,
-#05111f,
-#08213c,
-#0b3158,
-#08213c
-);
-background-size:400% 400%;
-animation:bgMove 15s ease infinite;
+background:#04101f;
 color:white;
 overflow-x:hidden;
 }
 
-@keyframes bgMove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+/* Semiconductor Theme */
+
+body::before{
+content:'';
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle,#00d4ff22 1px,transparent 1px);
+background-size:40px 40px;
+animation:move 20s linear infinite;
+z-index:-2;
+}
+
+@keyframes move{
+from{
+transform:translateY(0);
+}
+to{
+transform:translateY(-100px);
+}
 }
 
 nav{
-position:sticky;
+position:fixed;
+width:100%;
 top:0;
-z-index:999;
-padding:15px;
 background:rgba(0,0,0,.4);
-backdrop-filter:blur(15px);
-text-align:center;
+backdrop-filter:blur(10px);
+padding:15px;
+z-index:999;
 }
 
 nav a{
@@ -49,11 +54,6 @@ color:white;
 text-decoration:none;
 margin:15px;
 font-weight:600;
-transition:.3s;
-}
-
-nav a:hover{
-color:var(--primary);
 }
 
 .hero{
@@ -62,22 +62,16 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:40px;
+padding:20px;
 }
 
 .profile{
-width:220px;
-height:220px;
+width:250px;
+height:250px;
 border-radius:50%;
 object-fit:cover;
-border:4px solid var(--primary);
-box-shadow:0 0 30px var(--primary);
-animation:float 3s ease-in-out infinite;
-}
-
-@keyframes float{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-15px);}
+border:4px solid #00d4ff;
+box-shadow:0 0 40px #00d4ff;
 }
 
 .logo{
@@ -87,31 +81,32 @@ margin-top:20px;
 
 .hero h1{
 font-size:4rem;
-color:var(--primary);
+color:#00d4ff;
 margin-top:20px;
 }
 
 .hero h2{
 color:#f4b400;
-margin-top:10px;
+margin-top:15px;
 }
 
-.hero p{
+.typing{
+color:white;
+font-size:1.2rem;
 margin-top:15px;
-font-size:1.1rem;
 }
 
 .buttons{
-margin-top:30px;
+margin-top:25px;
 }
 
 .btn{
-display:inline-block;
-padding:12px 25px;
+padding:12px 22px;
+margin:8px;
 border-radius:10px;
-margin:10px;
-font-weight:bold;
+display:inline-block;
 text-decoration:none;
+font-weight:600;
 transition:.3s;
 }
 
@@ -120,7 +115,7 @@ transform:translateY(-5px);
 }
 
 .research{
-background:var(--primary);
+background:#00d4ff;
 color:black;
 }
 
@@ -130,93 +125,59 @@ color:white;
 }
 
 .whatsapp{
-background:#25D366;
+background:#25d366;
 color:white;
 }
 
 section{
-max-width:1200px;
-margin:auto;
-padding:80px 20px;
+padding:80px 10%;
 }
 
 .section-title{
 text-align:center;
 font-size:2.5rem;
 margin-bottom:40px;
-color:var(--primary);
+color:#00d4ff;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .card{
 background:rgba(255,255,255,.05);
-backdrop-filter:blur(15px);
 border:1px solid rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
 padding:25px;
 border-radius:20px;
 transition:.4s;
-opacity:0;
-transform:translateY(40px);
-}
-
-.card.show{
-opacity:1;
-transform:translateY(0);
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 0 25px rgba(0,212,255,.4);
+box-shadow:0 0 30px rgba(0,212,255,.4);
 }
 
 .skill{
 display:inline-block;
 padding:10px 15px;
-background:var(--primary);
+background:#00d4ff;
 color:black;
-border-radius:30px;
-margin:6px;
+border-radius:25px;
+margin:5px;
 font-weight:600;
 }
 
+.cert-img{
+width:100%;
+border-radius:15px;
+margin-top:15px;
+}
+
 footer{
-padding:50px;
+padding:40px;
 text-align:center;
-background:#02101f;
-margin-top:50px;
-}
-
-footer h3{
-color:var(--primary);
-margin-bottom:10px;
-}
-
-footer p{
-opacity:.8;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2.4rem;
-}
-
-.profile{
-width:170px;
-height:170px;
-}
-
-.logo{
-width:130px;
-}
-
-.section-title{
-font-size:2rem;
-}
-
+background:#020b15;
 }
