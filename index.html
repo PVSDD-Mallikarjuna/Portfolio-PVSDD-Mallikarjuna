@@ -1,913 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P V S D D Mallikarjuna | PrimeMOS - VLSI Engineer & Semiconductor Researcher</title>
-    
-    <!-- Favicon (Semiconductor Wafer Chip SVG) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23070a13%22/><rect x=%2230%22 y=%2230%22 width=%2240%22 height=%2240%22 rx=%225%22 fill=%22none%22 stroke=%22%2310b981%22 stroke-width=%226%22/><path d=%22M50 10 V30 M50 70 V90 M10 50 H30 M70 50 H90 M35 10 V30 M35 70 V90 M65 10 V30 M65 70 V90 M10 35 H30 M70 35 H90 M10 65 H30 M70 65 H90%22 stroke=%22%2310b981%22 stroke-width=%226%22 stroke-linecap=%22round%22/></svg>">
-    
-    <meta name="description" content="Portfolio of P V S D D Mallikarjuna - VLSI Engineer, Semiconductor Researcher, and Founder of PrimeMOS. Specializing in CMOS, Digital IC Design, OpenLane, and EDA flows.">
-    
-    <!-- Open Graph for LinkedIn / Facebook / WhatsApp -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="PVSDD Mallikarjuna | VLSI Engineer & Semiconductor Researcher">
-    <meta property="og:description" content="Founder of PrimeMOS Research & Solutions. IEEE Published VLSI Engineer specializing in CMOS IC Design, OpenLane, Cadence Virtuoso, and Physical Design.">
-    <meta property="og:image" content="https://pvsdd-mallikarjuna.github.io/Portfolio-PVSDD-Mallikarjuna/founder.jpg">
-    <meta property="og:url" content="https://pvsdd-mallikarjuna.github.io/Portfolio-PVSDD-Mallikarjuna/">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PVSDD Mallikarjuna | VLSI Engineer">
-    <meta name="twitter:description" content="IEEE Published VLSI Engineer. Founder of PrimeMOS. CMOS IC Design | OpenLane | Cadence Virtuoso | Physical Design.">
-    <meta name="twitter:image" content="https://pvsdd-mallikarjuna.github.io/Portfolio-PVSDD-Mallikarjuna/founder.jpg">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P V S D D Mallikarjuna | Portfolio</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet with Cache Buster -->
+  <link rel="stylesheet" href="style.css?v=1.1">
 </head>
+<body>
 
-<body data-theme="primemos">
-    <!-- Silicon Wafer Backdrop System -->
-    <div class="wafer-bg" id="waferBg"></div>
-    <div class="wafer-glow" id="waferGlow"></div>
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <span class="brand-text">PrimeMOS</span>
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li class="mobile-close-container">
+          <button class="mobile-close" id="mobile-close" aria-label="Close navigation">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
 
-    <!-- Floating Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo-link">
-                PVSDD <span class="logo-dot"></span>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="mesh-gradient"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="profile-container">
+        <img src="founder.jpg" class="profile" alt="P V S D D Mallikarjuna">
+      </div>
+      <h1>PVSDD Mallikarjuna</h1>
+      <h2>Founder & CEO, PrimeMOS Research & Solutions</h2>
+      
+      <!-- typing animation target -->
+      <p class="tagline" id="typing"></p>
+      
+      <p class="description">
+        Specialized in CMOS Design, Digital IC Design, Physical Design, OpenLane, SkyWater PDK, Cadence Virtuoso, FPGA Design, and AI-Enabled VLSI.
+      </p>
+      
+      <div class="buttons">
+        <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="btn research">
+          <i class="fa-solid fa-graduation-cap"></i> &nbsp;Explore Research
+        </a>
+        <a href="https://www.linkedin.com/in/p-v-s-d-d-mallikarjuna-9569b0298/" target="_blank" class="btn linkedin">
+          <i class="fa-brands fa-linkedin"></i> &nbsp;LinkedIn
+        </a>
+        <a href="https://wa.me/918019847793?text=Hello%20Mallikarjuna,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="btn whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> &nbsp;WhatsApp
+        </a>
+        <a href="https://www.primemos.com" target="_blank" class="btn primemos">
+          <i class="fa-solid fa-microchip"></i> &nbsp;PrimeMOS
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="card card-reveal">
+        <p>
+          I am the Founder of PrimeMOS Research & Solutions and an Associate Member of IETE. As a research-driven VLSI engineer and semiconductor innovator, I specialize in CMOS and Digital IC Design with extensive expertise in industry-standard tools like Cadence Virtuoso, Xilinx Vivado, OpenLane, and the SkyWater PDK.
+        </p>
+        <p style="margin-top: 1rem;">
+          An IEEE-published researcher and former Defense Research and Development Laboratory (DRDL) intern, I am deeply passionate about educational democratization, mentoring aspiring electronics students in chip design, and exploring advanced research collaborations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        
+        <div class="card card-reveal">
+          <h3><i class="fa-solid fa-route" style="color: var(--primary-orange); margin-right: 0.5rem;"></i> Physical Design</h3>
+          <div class="skills-container">
+            <span class="skill-tag">RTL-to-GDSII Flow</span>
+            <span class="skill-tag">Floorplanning</span>
+            <span class="skill-tag">Placement & Routing</span>
+            <span class="skill-tag">Timing Closure</span>
+            <span class="skill-tag">OpenROAD</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3><i class="fa-solid fa-microchip" style="color: var(--primary-orange); margin-right: 0.5rem;"></i> RTL Design</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Verilog HDL</span>
+            <span class="skill-tag">Digital Logic Design</span>
+            <span class="skill-tag">FSM</span>
+            <span class="skill-tag">Shift Registers</span>
+            <span class="skill-tag">ALU Architecture</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3><i class="fa-solid fa-wave-square" style="color: var(--primary-orange); margin-right: 0.5rem;"></i> Analog / Circuit Design</h3>
+          <div class="skills-container">
+            <span class="skill-tag">CMOS Circuits</span>
+            <span class="skill-tag">Schmitt Trigger</span>
+            <span class="skill-tag">Circuit Modelling</span>
+            <span class="skill-tag">Hysteresis Analysis</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3><i class="fa-solid fa-screwdriver-wrench" style="color: var(--primary-orange); margin-right: 0.5rem;"></i> EDA Tools</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Cadence Virtuoso</span>
+            <span class="skill-tag">OpenROAD</span>
+            <span class="skill-tag">Xilinx Vivado</span>
+            <span class="skill-tag">LTspice</span>
+            <span class="skill-tag">MATLAB</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3><i class="fa-solid fa-book" style="color: var(--primary-orange); margin-right: 0.5rem;"></i> Core Knowledge</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Digital Logic Design</span>
+            <span class="skill-tag">CMOS Fundamentals</span>
+            <span class="skill-tag">Low Power Design</span>
+            <span class="skill-tag">Semiconductor Device Modelling</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3><i class="fa-solid fa-brain" style="color: var(--primary-orange); margin-right: 0.5rem;"></i> Emerging Tech</h3>
+          <div class="skills-container">
+            <span class="skill-tag">AI/ML in EDA</span>
+            <span class="skill-tag">Internet of Things (IoT)</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="grid">
+        
+        <div class="card card-reveal">
+          <h3>Founder & CEO</h3>
+          <h4 style="color: var(--primary-orange);">PrimeMOS Research & Solutions</h4>
+          <span class="date-badge">December 2025 – Present</span>
+          <ul>
+            <li>Mentor undergraduate students in VLSI Physical Design and Verilog HDL.</li>
+            <li>Train students in Cadence Virtuoso and OpenROAD RTL-to-GDSII Flow.</li>
+            <li>Guide academic VLSI projects from concept to verification.</li>
+            <li>Promote semiconductor education and open-source silicon research.</li>
+          </ul>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Research Intern</h3>
+          <h4 style="color: var(--primary-orange);">Defence Research and Development Laboratory (DRDL)</h4>
+          <span class="date-badge">October 2024 – March 2025</span>
+          <ul>
+            <li>Developed MATLAB-based chaff dispersion simulation models.</li>
+            <li>Worked on electronic warfare and countermeasures applications.</li>
+            <li>Applied signal modelling and defence electronics principles.</li>
+            <li>Contributed research output under senior scientist guidance.</li>
+          </ul>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Project Intern</h3>
+          <h4 style="color: var(--primary-orange);">ADVI Group of Companies</h4>
+          <span class="date-badge">January 2025 – May 2025</span>
+          <ul>
+            <li>Worked on STM32 and PSoC microcontroller platforms.</li>
+            <li>Performed GPIO, timer, and peripheral driver configuration.</li>
+            <li>Developed embedded applications utilizing communication interfaces.</li>
+            <li>Participated in hardware validation, testing, and debugging.</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="grid">
+        
+        <div class="card card-reveal">
+          <h3>B.Tech – ECE</h3>
+          <h4 style="color: var(--primary-orange);">Jawaharlal Nehru Technological University Hyderabad (JNTUH)</h4>
+          <span class="date-badge">2021 - 2025</span>
+          <p style="margin-top: 0.5rem; font-weight: 500;">Minor Specialization: Internet of Things (IoT)</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">First Class with Distinction</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Intermediate – MPC</h3>
+          <h4 style="color: var(--primary-orange);">Narayana Junior College</h4>
+          <span class="date-badge">2019 - 2021</span>
+          <p style="margin-top: 0.5rem; font-weight: 500;">Score: 95%</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>SSC</h3>
+          <h4 style="color: var(--primary-orange);">St Mary's Bethany Convent Vidyalaya</h4>
+          <span class="date-badge">2019 Completed</span>
+          <p style="margin-top: 0.5rem; font-weight: 500;">CGPA: 9.2</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research">
+    <div class="container">
+      <h2 class="section-title">Research Publications</h2>
+      <div class="grid">
+        
+        <div class="card card-reveal">
+          <h3>Optimized 4-Bit ALU Architecture for Enhanced Speed</h3>
+          <p>IEEE Conference Paper proposing a high-speed, low-power ALU using CMOS, PTL, and Transmission Gate technologies in 90nm GPDK.</p>
+          <div class="pub-meta">
+            <i class="fa-solid fa-bookmark" style="color: var(--primary-orange);"></i>
+            <span>IEEE Conference Publication (ESIC 2025)</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>India's Emerging Semiconductor Manufacturing Ecosystem</h3>
+          <p>Comprehensive analysis of India's semiconductor ecosystem covering Fab and OSAT development, process engineering roles, workforce demand, and future opportunities.</p>
+          <div class="pub-meta">
+            <i class="fa-solid fa-calendar" style="color: var(--primary-orange);"></i>
+            <span>Published: April 2026</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>4-Bit ALU Implementation Using OpenLane Flow</h3>
+          <p>Designed and implemented a 4-bit Arithmetic Logic Unit using the OpenLane RTL-to-GDSII flow with SKY130 PDK, covering the complete ASIC design cycle.</p>
+          <div class="pub-meta">
+            <i class="fa-solid fa-calendar" style="color: var(--primary-orange);"></i>
+            <span>Published: March 2026</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>AND Gate Design Using CMOS, PTL & TGL</h3>
+          <p>Comparative study of CMOS, Pass Transistor Logic, and Transmission Gate Logic implementations focusing on power, delay, and transistor count.</p>
+          <div class="pub-meta">
+            <i class="fa-solid fa-calendar" style="color: var(--primary-orange);"></i>
+            <span>Published: January 2026</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>One Bit ALU Using Multiplexer Logic</h3>
+          <p>Designed and simulated a one-bit ALU using multiplexers and logic gates in Microwind DSCH, implementing NOT, AND, OR, and XOR operations.</p>
+          <div class="pub-meta">
+            <i class="fa-solid fa-calendar" style="color: var(--primary-orange);"></i>
+            <span>Published: December 2025</span>
+          </div>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>OR Gate Design Using CMOS, PTL & TGL</h3>
+          <p>Performance comparison of CMOS, Pass Transistor Logic, and Transmission Gate Logic based OR gate implementations using Cadence and LTSpice simulations.</p>
+          <div class="pub-meta">
+            <i class="fa-solid fa-calendar" style="color: var(--primary-orange);"></i>
+            <span>Published: February 2026</span>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="text-center" style="margin-top: 3.5rem;">
+        <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="btn btn-secondary">
+          <i class="fa-solid fa-up-right-from-square"></i> &nbsp;View Complete ResearchGate Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        
+        <div class="card card-reveal">
+          <h3>Optimized 4-bit ALU Design</h3>
+          <p>Designed and implemented a high-speed CMOS-based 4-bit Arithmetic Logic Unit. Focused on reducing propagation delay and improving performance compared to conventional architectures. Published at IEEE ESIC 2025.</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Plasmonic Ring Counter for Diabetes Detection</h3>
+          <p>Developed a non-invasive glucose monitoring concept using plasmonic nanostructures, resonators, and photonic sensing techniques integrated with AI-based decision models.</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>ECG Rural Healthcare Monitoring System</h3>
+          <p>Designed a remote IoT healthcare system for monitoring ECG, heart rate, and patient status. Integrated GSM communication for emergency alerts to hospitals in rural areas.</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Smart Driverless Vehicle</h3>
+          <p>Developed an autonomous vehicle prototype featuring obstacle detection, tyre pressure monitoring, battery management, motion sensing, and safety navigation indicators.</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Heart Rate & SpO₂ Monitoring System</h3>
+          <p>Implemented a portable healthcare device using a MAX30102 sensor and Arduino. Measured heart rate and blood oxygen levels in real time with OLED display visualization.</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Satellite Simulation Using MATLAB</h3>
+          <p>Performs satellite communication link analysis and multi-hop signal propagation simulation to evaluate channel transmission performance parameters.</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Helical Antenna Design & Simulation</h3>
+          <p>Designed and simulated a helical antenna for wireless communication applications. Analyzed radiation pattern, gain, and impedance matching characteristics in MATLAB.</p>
+        </div>
+        
+        <div class="card card-reveal">
+          <h3>Chaff Dispersion Simulation</h3>
+          <p>Developed a MATLAB-based simulation model for chaff cloud dispersion, studying particle distribution behavior for electronic warfare applications at DRDL.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      
+      <div class="grid">
+        
+        <div class="cert-card card-reveal">
+          <div>
+            <h3>VLSI Design with AI Training</h3>
+            <p style="color: var(--primary-orange); font-size: 0.85rem; font-weight: 600;">IITM Pravartak & Internshala</p>
+          </div>
+          <div class="cert-img-container">
+            <a href="Internship.png" target="_blank">
+              <img src="Internship.png" class="cert-img" alt="VLSI Design with AI Certificate">
             </a>
-            <div class="nav-menu" id="navMenu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#timeline" class="nav-link">Journey</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#certificates" class="nav-link">Credentials</a>
-                <a href="#publications" class="nav-link">Publications</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#testimonials" class="nav-link">Recognition</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          </div>
         </div>
-    </nav>
-
-    
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-container">
-                <img src="founder.jpg" alt="PVSDD Mallikarjuna" class="profile-image">
-                <div class="profile-badge">Founder & CEO</div>
-            </div>
-            
-            <h1 class="hero-title">PVSDD Mallikarjuna</h1>
-            <p class="hero-subtitle">Founder & CEO, PrimeMOS Research & Solutions</p>
-            
-            <div class="typing-container">
-                <span class="typing-text">Initializing hardware systems...</span>
-            </div>
-            
-            <p class="hero-description">
-                Pioneering semiconductor innovation, custom chip design consultancy, and high-performance VLSI engineering roadmaps. Specializing in CMOS architecture design, OpenLane ASIC flow automation, and strategic EDA tool execution to transform digital visions into silicon reality.
-            </p>
-
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <span class="material-symbols-outlined">terminal</span> View Spec Sheets
-                </a>
-                <a href="PVSDD-Mallikarjuna-Resume.pdf" download class="btn btn-secondary">
-                    <span class="material-symbols-outlined">description</span> Download CV
-                </a>
-                <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" 
-                   target="_blank" class="btn btn-secondary">
-                    <span class="material-symbols-outlined">science</span> Research Gate
-                </a>
-                <a href="https://www.linkedin.com/in/p-v-s-d-d-mallikarjuna-9569b0298/" 
-                   target="_blank" class="btn btn-secondary">
-                    <span class="material-symbols-outlined">badge</span> LinkedIn
-                </a>
-                <a href="https://www.primemos.com" 
-                   target="_blank" class="btn btn-secondary">
-                    <span class="material-symbols-outlined">domain</span> PrimeMOS
-                </a>
-                <a href="https://wa.me/918019847793?text=Hello%20Mallikarjuna,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." 
-                   target="_blank" class="btn btn-accent">
-                    <span class="material-symbols-outlined">chat</span> WhatsApp
-                </a>
-            </div>
-
-            <div class="scroll-indicator">
-                <p>Scroll to Explore</p>
-                <div class="mouse"></div>
-            </div>
+        
+        <div class="cert-card card-reveal">
+          <div>
+            <h3>Basics of Physical Design</h3>
+            <p style="color: var(--primary-orange); font-size: 0.85rem; font-weight: 600;">Maven Silicon</p>
+          </div>
+          <div class="cert-img-container">
+            <a href="PD Cerificate.png" target="_blank">
+              <img src="PD Cerificate.png" class="cert-img" alt="Physical Design Certificate">
+            </a>
+          </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="icon">
-                        <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--accent-emerald);">track_changes</span>
-                    </div>
-                    <h3>Vision</h3>
-                    <p>Architecting custom silicon IP cores, low-power ASIC design flows, and advancing AI-integrated semiconductor development models.</p>
-                </div>
-                
-                <div class="about-card">
-                    <div class="icon">
-                        <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--accent-cyan);">biotech</span>
-                    </div>
-                    <h3>Semiconductor R&D</h3>
-                    <p>Directing CMOS logic exploration, hardware acceleration, physical design optimizations, and semiconductor technology advisory.</p>
-                </div>
-                
-                <div class="about-card">
-                    <div class="icon">
-                        <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--accent-gold);">corporate_fare</span>
-                    </div>
-                    <h3>Corporate Leadership</h3>
-                    <p>Founder & CEO of PrimeMOS, Associate Member of IETE, IEEE-published researcher, and defense systems simulation specialist.</p>
-                </div>
-            </div>
-
-            <div class="about-full">
-                <p>
-                    I am the Founder & CEO of <strong>PrimeMOS Research & Solutions</strong>, an engineering firm specializing in advanced semiconductor R&D and VLSI consultancies. We focus on CMOS and Digital IC Design workflows, utilizing platforms like Cadence Virtuoso, Xilinx Vivado, OpenLane compiler flows, and open-source SkyWater PDKs to design robust micro-architectures and silicon IPs.
-                </p>
-                <p>
-                    As an IEEE-published researcher and former Defence Research and Development Laboratory (DRDL) collaborator, I lead hardware design validation and computational simulation architectures. I am deeply dedicated to democratizing chip design workflows, providing executive program advisories, and building robust industry-academic ecosystems to mentor the next generation of semiconductor leaders.
-                </p>
-            </div>
+        
+        <div class="cert-card card-reveal">
+          <div>
+            <h3>Semiconductor Fabrication</h3>
+            <p style="color: var(--primary-orange); font-size: 0.85rem; font-weight: 600;">NIEIT Calicut & Purdue University</p>
+          </div>
+          <div class="cert-img-container">
+            <a href="fabrication cerificate.png" target="_blank">
+              <img src="fabrication cerificate.png" class="cert-img" alt="Semiconductor Fabrication Certificate">
+            </a>
+          </div>
         </div>
-    </section>
-
-    <!-- Stats Counter Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-number" data-target="6">0</span>
-                    <span class="stat-label">Research Publications</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="8">0</span>
-                    <span class="stat-label">VLSI Projects</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="3">0</span>
-                    <span class="stat-label">Internships & Roles</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="3">0</span>
-                    <span class="stat-label">Certifications</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Journey Section (Education & Experience) -->
-    <section id="timeline" class="section">
-        <div class="container">
-            <h2 class="section-title">My Journey</h2>
-            
-            <div class="timeline-tabs">
-                <button class="timeline-tab active" data-tab="experience">Experience</button>
-                <button class="timeline-tab" data-tab="education">Education</button>
-            </div>
-
-            <!-- Experience Timeline -->
-            <div id="experience-timeline" class="timeline-content active">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content-box">
-                            <h3>Founder & CEO</h3>
-                            <p class="timeline-org">PrimeMOS Research & Solutions</p>
-                            <p class="timeline-date">2024 - Present</p>
-                            <ul class="timeline-details">
-                                <li>Directing semiconductor R&D roadmaps, custom VLSI design consultancies, and digital IP design programs.</li>
-                                <li>Architecting open-source ASIC compile pipelines and guiding development teams on modern chip synthesis.</li>
-                                <li>Leading corporate strategic partnerships, technology exploration groups, and open-source tapeout programs.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content-box">
-                            <h3>Defense R&D Collaborator & Intern</h3>
-                            <p class="timeline-org">DRDL (Defence Research & Development Laboratory, DRDO)</p>
-                            <p class="timeline-date">Oct 2024 - Mar 2025</p>
-                            <ul class="timeline-details">
-                                <li>Collaborated on chaff dispersion simulations and naval electronic counter-measures models.</li>
-                                <li>Engineered mathematical models and simulation systems using MATLAB to validate defense electronics research.</li>
-                                <li>Presented system performance summaries, model validation reports, and technical briefs for R&D guidelines.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content-box">
-                            <h3>Embedded Hardware Consultant & Intern</h3>
-                            <p class="timeline-org">ADVI Group of Companies</p>
-                            <p class="timeline-date">Jan 2025 - May 2025</p>
-                            <ul class="timeline-details">
-                                <li>Consulted on board validation, peripheral interfaces, and configurations for STM32 microcontrollers and Cypress PSoC platforms.</li>
-                                <li>Validated physical board designs, sensor interfacing protocols, and communication line integrity.</li>
-                                <li>Programmed robust firmware architectures in Embedded C for real-time validation suites and test automation.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Education Timeline -->
-            <div id="education-timeline" class="timeline-content">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content-box">
-                            <h3>B.Tech in Electronics & Communication Engineering</h3>
-                            <p class="timeline-org">Jawaharlal Nehru Technological University Hyderabad (JNTUH)</p>
-                            <p class="timeline-date">2021 - 2025</p>
-                            <ul class="timeline-details">
-                                <li>First Class with Distinction</li>
-                                <li>Minor Specialization: Internet of Things (IoT)</li>
-                                <li>Key Focus: Hardware design, CMOS architectures, and HDL design flows.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="projects-grid">
-                <!-- Card 1 -->
-                <div class="project-card" data-project="0">
-                    <div class="project-header">
-                        <div class="project-icon"><span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-emerald);">bolt</span></div>
-                        <span class="project-num">SPEC-01</span>
-                    </div>
-                    <h3>Optimized 4-bit ALU Design</h3>
-                    <p>CMOS-based high-speed ALU with reduced propagation delay. Published in IEEE conference proceedings with extensive comparative analysis of CMOS, PTL, and TGL technologies.</p>
-                    <div class="project-tags">
-                        <span class="tag">CMOS</span>
-                        <span class="tag">GPDK 90nm</span>
-                        <span class="tag">Cadence Virtuoso</span>
-                    </div>
-                    <div class="project-btn-container">
-                        <span class="project-view-spec">View Datasheet</span>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="project-card" data-project="1">
-                    <div class="project-header">
-                        <div class="project-icon"><span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-cyan);">dna</span></div>
-                        <span class="project-num">SPEC-02</span>
-                    </div>
-                    <h3>Plasmonic Ring Counter</h3>
-                    <p>A non-invasive diabetes detection system using plasmonic nanostructures for glucose monitoring. Integrates light modulation simulations with analytical models.</p>
-                    <div class="project-tags">
-                        <span class="tag">Photonics</span>
-                        <span class="tag">Glucose Detection</span>
-                        <span class="tag">MATLAB</span>
-                    </div>
-                    <div class="project-btn-container">
-                        <span class="project-view-spec">View Datasheet</span>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="project-card" data-project="2">
-                    <div class="project-header">
-                        <div class="project-icon"><span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-gold);">stethoscope</span></div>
-                        <span class="project-num">SPEC-03</span>
-                    </div>
-                    <h3>ECG Rural Healthcare Monitor</h3>
-                    <p>IoT-based portable ECG healthcare monitor designed for rural clinics. Integrates biological signal collection, noise filtering, and GSM communication pipelines.</p>
-                    <div class="project-tags">
-                        <span class="tag">IoT</span>
-                        <span class="tag">GSM Modules</span>
-                        <span class="tag">Embedded C</span>
-                    </div>
-                    <div class="project-btn-container">
-                        <span class="project-view-spec">View Datasheet</span>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="project-card" data-project="3">
-                    <div class="project-header">
-                        <div class="project-icon"><span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-emerald);">smart_toy</span></div>
-                        <span class="project-num">SPEC-04</span>
-                    </div>
-                    <h3>Smart Driverless Vehicle</h3>
-                    <p>Autonomous vehicle prototype utilizing STM32 microcontrollers with real-time obstacle avoidance, tyre pressure telemetry, and battery protection features.</p>
-                    <div class="project-tags">
-                        <span class="tag">STM32</span>
-                        <span class="tag">Sensors</span>
-                        <span class="tag">Autonomous Navigation</span>
-                    </div>
-                    <div class="project-btn-container">
-                        <span class="project-view-spec">View Datasheet</span>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="project-card" data-project="4">
-                    <div class="project-header">
-                        <div class="project-icon"><span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-cyan);">favorite</span></div>
-                        <span class="project-num">SPEC-05</span>
-                    </div>
-                    <h3>Heart Rate & SpO₂ Monitor</h3>
-                    <p>Portable health tracking device equipped with MAX30102 PPG sensor and OLED display, providing fast physiological metrics display and warning parameters.</p>
-                    <div class="project-tags">
-                        <span class="tag">Arduino</span>
-                        <span class="tag">MAX30102</span>
-                        <span class="tag">I2C Protocol</span>
-                    </div>
-                    <div class="project-btn-container">
-                        <span class="project-view-spec">View Datasheet</span>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="project-card" data-project="5">
-                    <div class="project-header">
-                        <div class="project-icon"><span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-gold);">satellite_alt</span></div>
-                        <span class="project-num">SPEC-06</span>
-                    </div>
-                    <h3>Satellite Communication Link</h3>
-                    <p>MATLAB-based simulation modeling multi-hop satellite transmission, path loss factors, atmospheric attenuation, and signal-to-noise calculations.</p>
-                    <div class="project-tags">
-                        <span class="tag">MATLAB</span>
-                        <span class="tag">Link Budget</span>
-                        <span class="tag">RF Systems</span>
-                    </div>
-                    <div class="project-btn-container">
-                        <span class="project-view-spec">View Datasheet</span>
-                    </div>
-                </div>
-
-                <!-- Card 7 -->
-                <div class="project-card" data-project="6">
-                    <div class="project-header">
-                        <div class="project-icon"><span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-emerald);">settings_input_antenna</span></div>
-                        <span class="project-num">SPEC-07</span>
-                    </div>
-                    <h3>Helical Antenna Design</h3>
-                    <p>MATLAB-based helical antenna simulation covering gain patterns, directivity, impedance matching, and radiation efficiency analysis for satellite communication bands.</p>
-                    <div class="project-tags">
-                        <span class="tag">MATLAB</span>
-                        <span class="tag">Antenna Theory</span>
-                        <span class="tag">RF Design</span>
-                    </div>
-                    <div class="project-btn-container">
-                        <span class="project-view-spec">View Datasheet</span>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="project-card" data-project="7">
-                    <div class="project-header">
-                        <div class="project-icon"><span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-cyan);">shield</span></div>
-                        <span class="project-num">SPEC-08</span>
-                    </div>
-                    <h3>Chaff Dispersion Simulation</h3>
-                    <p>Defense electronics project developed at DRDL (DRDO). Modeled chaff cloud dispersion dynamics, radar cross-section reduction, and naval ECM effectiveness using MATLAB.</p>
-                    <div class="project-tags">
-                        <span class="tag">MATLAB</span>
-                        <span class="tag">Defense ECM</span>
-                        <span class="tag">Signal Modeling</span>
-                    </div>
-                    <div class="project-btn-container">
-                        <span class="project-view-spec">View Datasheet</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Credentials / Certificate Gallery Section -->
-    <section id="certificates" class="section">
-        <div class="container">
-            <h2 class="section-title">Credentials & Certifications</h2>
-            
-            <div class="certificates-grid">
-                <!-- Certificate 1 -->
-                <div class="certificate-card" data-cert="pd-certificate.png" data-caption="Physical Design Certification: Standard Cell ASIC Flow from RTL to GDSII.">
-                    <div class="cert-thumbnail-wrapper">
-                        <img src="pd-certificate.png" class="cert-thumbnail" alt="Physical Design Certification">
-                        <div class="cert-overlay">
-                            <button class="cert-zoom-btn">Inspect Certificate</button>
-                        </div>
-                    </div>
-                    <div class="cert-info">
-                        <p class="cert-issuer">NPTEL / SWAYAM</p>
-                        <h3>Physical Design Certification</h3>
-                        <p class="cert-desc">Focuses on floorplanning, power planning, cell placement, clock tree synthesis, routing, and sign-off validations.</p>
-                    </div>
-                </div>
-
-                <!-- Certificate 2 -->
-                <div class="certificate-card" data-cert="fabrication-certificate.png" data-caption="Semiconductor Device Fabrication Certification. Verification of processing technologies.">
-                    <div class="cert-thumbnail-wrapper">
-                        <img src="fabrication-certificate.png" class="cert-thumbnail" alt="Semiconductor Fabrication Certification">
-                        <div class="cert-overlay">
-                            <button class="cert-zoom-btn">Inspect Certificate</button>
-                        </div>
-                    </div>
-                    <div class="cert-info">
-                        <p class="cert-issuer">Indian Institute of Science (IISc)</p>
-                        <h3>Semiconductor Fabrication</h3>
-                        <p class="cert-desc">Covers cleanroom operations, photolithography, diffusion, thin film oxidation, chemical vapor deposition, and etch processes.</p>
-                    </div>
-                </div>
-
-                <!-- Certificate 3 -->
-                <div class="certificate-card" data-cert="Internship.png" data-caption="DRDL Research Internship validation from Defence Research & Development Organization.">
-                    <div class="cert-thumbnail-wrapper">
-                        <img src="Internship.png" class="cert-thumbnail" alt="DRDL Internship Certification">
-                        <div class="cert-overlay">
-                            <button class="cert-zoom-btn">Inspect Certificate</button>
-                        </div>
-                    </div>
-                    <div class="cert-info">
-                        <p class="cert-issuer">DRDL (DRDO)</p>
-                        <h3>Research Intern Credentials</h3>
-                        <p class="cert-desc">Official certification validating development of chaff dispersion models, dynamic simulator algorithms, and MATLAB verification systems.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title">Research Publications</h2>
-            
-            <div class="pub-filter-bar">
-                <button class="pub-filter-btn active" data-filter="all">All Research</button>
-                <button class="pub-filter-btn" data-filter="peer-reviewed">Peer-Reviewed IEEE</button>
-                <button class="pub-filter-btn" data-filter="technical-papers">ASIC & FPGA Papers</button>
-                <button class="pub-filter-btn" data-filter="reports">Semiconductor Ecosystems</button>
-            </div>
-            
-            <div class="publications-grid">
-                <!-- Pub 1 -->
-                <div class="publication-card" data-category="reports">
-                    <div class="pub-top">
-                        <span class="pub-badge">Ecosystem Review</span>
-                        <span class="pub-year">2026</span>
-                    </div>
-                    <h3>India's Emerging Semiconductor Manufacturing Ecosystem</h3>
-                    <p class="pub-type"><span class="material-symbols-outlined pub-type-icon">analytics</span> Industry Analysis Report</p>
-                    <p>Comprehensive evaluation covering Fab and OSAT development, process engineering roles, workforce requirements, local supply-chains, and academic alignment.</p>
-                    <div class="pub-footer">
-                        <span class="pub-date">April 2026</span>
-                        <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="read-more">View Publication</a>
-                    </div>
-                </div>
-
-                <!-- Pub 2 -->
-                <div class="publication-card" data-category="technical-papers">
-                    <div class="pub-top">
-                        <span class="pub-badge">ASIC Implementation</span>
-                        <span class="pub-year">2026</span>
-                    </div>
-                    <h3>4-Bit ALU Implementation Using OpenLane Flow</h3>
-                    <p class="pub-type"><span class="material-symbols-outlined pub-type-icon">memory</span> Practical ASIC Design Layout</p>
-                    <p>Detailing standard-cell based synthesis, pre-layout validation, placement, routing, and tape-out signoff using SKY130 PDK inside the OpenLane compiler.</p>
-                    <div class="pub-footer">
-                        <span class="pub-date">March 2026</span>
-                        <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="read-more">View Publication</a>
-                    </div>
-                </div>
-
-                <!-- Pub 3 -->
-                <div class="publication-card" data-category="technical-papers">
-                    <div class="pub-top">
-                        <span class="pub-badge">Logic Optimization</span>
-                        <span class="pub-year">2026</span>
-                    </div>
-                    <h3>AND Gate Design Comparison: CMOS vs PTL vs TGL</h3>
-                    <p class="pub-type"><span class="material-symbols-outlined pub-type-icon">electric_bolt</span> CMOS Circuit Analysis</p>
-                    <p>A performance analysis evaluating propagation delay, dynamic power dissipation, noise margins, and layout density across logic families.</p>
-                    <div class="pub-footer">
-                        <span class="pub-date">January 2026</span>
-                        <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="read-more">View Publication</a>
-                    </div>
-                </div>
-
-                <!-- Pub 4 -->
-                <div class="publication-card" data-category="peer-reviewed">
-                    <div class="pub-top">
-                        <span class="pub-badge">IEEE Publication</span>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <h3>Optimized 4-bit ALU for Enhanced Speed: A CMOS Approach</h3>
-                    <p class="pub-type"><span class="material-symbols-outlined pub-type-icon">menu_book</span> IEEE Conference Proceeding</p>
-                    <p>Novel CMOS speed optimization methodology applying transmission-gate networks to critical path components. Demonstrated power-delay product improvements.</p>
-                    <div class="pub-footer">
-                        <span class="pub-date">IEEE ESIC 2025</span>
-                        <a href="https://ieeexplore.ieee.org/document/10499691" target="_blank" class="read-more">View on IEEE Xplore</a>
-                    </div>
-                </div>
-
-                <!-- Pub 5 -->
-                <div class="publication-card" data-category="technical-papers">
-                    <div class="pub-top">
-                        <span class="pub-badge">Logic Optimization</span>
-                        <span class="pub-year">2026</span>
-                    </div>
-                    <h3>OR Gate Design Comparison: CMOS vs PTL vs TGL</h3>
-                    <p class="pub-type"><span class="material-symbols-outlined pub-type-icon">settings_ethernet</span> Circuit Simulation Analysis</p>
-                    <p>Comparative design implementation and LTSpice simulation analyzing power-delay indices and driving load properties.</p>
-                    <div class="pub-footer">
-                        <span class="pub-date">February 2026</span>
-                        <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="read-more">View Publication</a>
-                    </div>
-                </div>
-
-                <!-- Pub 6 -->
-                <div class="publication-card" data-category="technical-papers">
-                    <div class="pub-top">
-                        <span class="pub-badge">FPGA Verification</span>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <h3>VHDL BCD Converter Core Design using Xilinx Vivado</h3>
-                    <p class="pub-type"><span class="material-symbols-outlined pub-type-icon">hardware</span> RTL Synthesis Core</p>
-                    <p>RTL code, testbench, behavioral simulations, and logic optimization for binary-coded decimal converters targetting Artix-7 FPGA boards.</p>
-                    <div class="pub-footer">
-                        <span class="pub-date">October 2025</span>
-                        <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="read-more">View Publication</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="view-all-pubs">
-                <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="btn btn-primary">
-                    <span class="material-symbols-outlined">menu_book</span> Complete ResearchGate Profile
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Skills Section (Silicon IC Floorplan Layout) -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            
-            <!-- Silicon floorplan display -->
-            <div class="ic-floorplan">
-                <!-- Digital Block -->
-                <div class="die-block die-digital">
-                    <div class="die-header">
-                        <h3>Digital Front-End Core</h3>
-                        <span class="die-addr">ADDR: 0x01</span>
-                    </div>
-                    <div class="die-body">
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">memory</span>
-                            <span class="skill-name">Verilog HDL / RTL Coding</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">developer_board</span>
-                            <span class="skill-name">FPGA Logic & Synthesis (Vivado)</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">schema</span>
-                            <span class="skill-name">Digital IC Logic Synthesis</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Analog Block -->
-                <div class="die-block die-analog">
-                    <div class="die-header">
-                        <h3>Analog / Mixed-Signal Core</h3>
-                        <span class="die-addr">ADDR: 0x02</span>
-                    </div>
-                    <div class="die-body">
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">waves</span>
-                            <span class="skill-name">CMOS Schematics & Transistor Leveling</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">layers</span>
-                            <span class="skill-name">Cadence Virtuoso Design System</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">show_chart</span>
-                            <span class="skill-name">LTSpice / HSPICE Simulation</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- EDA Block -->
-                <div class="die-block die-eda">
-                    <div class="die-header">
-                        <h3>EDA RTL-to-GDSII Physical Design</h3>
-                        <span class="die-addr">ADDR: 0x03</span>
-                    </div>
-                    <div class="die-body">
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">terminal</span>
-                            <span class="skill-name">OpenLane Compiler Flow</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">grid_on</span>
-                            <span class="skill-name">ASIC Floorplanning & Placement</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">water_drop</span>
-                            <span class="skill-name">SkyWater 130nm / GPDK 90nm PDKs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Embedded System Block -->
-                <div class="die-block die-embedded">
-                    <div class="die-header">
-                        <h3>Embedded Interfaces & IoT</h3>
-                        <span class="die-addr">ADDR: 0x04</span>
-                    </div>
-                    <div class="die-body">
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">settings_input_hdmi</span>
-                            <span class="skill-name">STM32 Firmware (C / Embedded C)</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">calculate</span>
-                            <span class="skill-name">MATLAB Modeling & Simulation</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="material-symbols-outlined skill-icon">hub</span>
-                            <span class="skill-name">Sensor Protocols (I2C, SPI, UART)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Key Technologies cloud -->
-            <div class="skills-cloud">
-                <h3>Silicon Ecosystem Skills</h3>
-                <div class="cloud-tags">
-                    <span class="tech-tag"><span class="led-indicator"></span>VLSI</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>CMOS Design</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>ASIC Flow</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>Verilog HDL</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>OpenLane</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>Cadence Virtuoso</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>Xilinx Vivado</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>SkyWater PDK</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>Physical Design</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>Python</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>MATLAB</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>STM32 Firmware</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>IoT Architectures</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>C / Embedded C</span>
-                    <span class="tech-tag"><span class="led-indicator"></span>FPGA Hardware</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials & Recognition -->
-    <section id="testimonials" class="section">
-        <div class="container">
-            <h2 class="section-title">Testimonials & Recognition</h2>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="testimonial-text">
-                        "PVSDD's deep expertise in VLSI design, combined with his dedication to defense research simulations, was invaluable. His MATLAB models for chaff dispersion showed exemplary analytical skill."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-details">
-                            <h4>DRDL Internship Assessment</h4>
-                            <p>Research Guide, DRDL Hyderabad (Oct 2024 – Mar 2025)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="testimonial-text">
-                        "An outstanding researcher who successfully published at IEEE. His work on optimized transmission-gate ALU design represents a real contribution to low-power, high-speed circuit literature."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-details">
-                            <h4>IEEE Peer Review</h4>
-                            <p>Academic Review Committee, IEEE Conference</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="testimonial-text">
-                        "As an Associate Member of IETE and Founder of PrimeMOS, Mallikarjuna is playing an active role in driving local semiconductor education and open-source chip design training."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-details">
-                            <h4>IETE Professional Verification</h4>
-                            <p>Associate Member Committee</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--accent-gold); font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="testimonial-text">
-                        "Delivered robust embedded configurations and board testing protocols during his internship. Excellent grasp of STM32 microcontrollers, PSoC environments, and validation testing."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-details">
-                            <h4>ADVI Project Assessment</h4>
-                            <p>Technical Lead, Embedded Systems Dept</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <h3><span class="material-symbols-outlined" style="vertical-align: bottom; margin-right: 4px; color: var(--accent-emerald);">mail</span> Email</h3>
-                    <p>Connect for research projects or design collaborations.</p>
-                    <a href="mailto:mallik.palaparthi3@gmail.com" class="contact-link">mallik.palaparthi3@gmail.com</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3><span class="material-symbols-outlined" style="vertical-align: bottom; margin-right: 4px; color: var(--accent-cyan);">badge</span> LinkedIn</h3>
-                    <p>Connect with me for professional updates and networking.</p>
-                    <a href="https://www.linkedin.com/in/p-v-s-d-d-mallikarjuna-9569b0298/" target="_blank" class="contact-link">View Profile</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3><span class="material-symbols-outlined" style="vertical-align: bottom; margin-right: 4px; color: var(--accent-emerald);">chat</span> WhatsApp</h3>
-                    <p>Chat directly for quick discussions, inquiries, or support.</p>
-                    <a href="https://wa.me/918019847793?text=Hello%20Mallikarjuna,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="contact-link">Chat on WhatsApp</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3><span class="material-symbols-outlined" style="vertical-align: bottom; margin-right: 4px; color: var(--accent-gold);">science</span> Research</h3>
-                    <p>Read full abstracts and download conference preprints.</p>
-                    <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="contact-link">ResearchGate</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3><span class="material-symbols-outlined" style="vertical-align: bottom; margin-right: 4px; color: var(--accent-emerald);">domain</span> PrimeMOS</h3>
-                    <p>Visit the official PrimeMOS solutions portal.</p>
-                    <a href="https://www.primemos.com" target="_blank" class="contact-link">www.primemos.com</a>
-                </div>
-
-                <div class="contact-card">
-                    <h3><span class="material-symbols-outlined" style="vertical-align: bottom; margin-right: 4px; color: var(--accent-cyan);">code</span> GitHub</h3>
-                    <p>Explore open-source VLSI designs, RTL code, and ASIC flow templates.</p>
-                    <a href="https://github.com/PVSDD-Mallikarjuna" target="_blank" class="contact-link">View GitHub</a>
-                </div>
-            </div>
-
-            <div class="contact-form-container">
-                <h3>Direct Message</h3>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Write your message here..." rows="5" required aria-label="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Transmit Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <a href="https://www.primemos.com" target="_blank" style="display: inline-block; transition: opacity 0.3s ease;">
-                        <img src="Company.png" alt="PrimeMOS Research & Solutions" style="height: 40px; width: auto; margin-bottom: 12px; opacity: 0.85;">
-                    </a>
-                    <h4>PVSDD Mallikarjuna</h4>
-                    <p>VLSI Engineer | Semiconductor Researcher | Founder, PrimeMOS Research & Solutions</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#certificates">Certificates</a></li>
-                        <li><a href="#publications">Publications</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/p-v-s-d-d-mallikarjuna-9569b0298/" target="_blank" class="social-icon" title="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </a>
-                        <a href="https://www.researchgate.net/profile/P-V-S-D-D-Mallikarjuna" target="_blank" class="social-icon" title="ResearchGate"><span class="material-symbols-outlined" style="font-size: 16px;">science</span></a>
-                        <a href="https://www.primemos.com" target="_blank" class="social-icon" title="PrimeMOS"><span class="material-symbols-outlined" style="font-size: 16px;">language</span></a>
-                        <a href="https://github.com/PVSDD-Mallikarjuna" target="_blank" class="social-icon" title="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 - 2026 PVSDD Mallikarjuna. All rights reserved. | Advancing Semiconductor Innovation Through Research</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Specifications Modal -->
-    <div id="projectModal" class="modal-overlay">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h2 id="modalProjectTitle">Project Datasheet</h2>
-                <button class="modal-close" id="closeProjectModal" aria-label="Close Modal">&times;</button>
-            </div>
-            <div class="modal-body" id="modalProjectBody">
-                <!-- Dynamically loaded datasheet spec sheets -->
-            </div>
-        </div>
+        
+      </div>
+      
+      <div class="cert-list card-reveal">
+        <h3 style="margin-bottom: 1.5rem; text-align: center;"><i class="fa-solid fa-list-check" style="color: var(--primary-orange); margin-right: 0.5rem;"></i> All Completed Certifications</h3>
+        <ul>
+          <li><strong>CMOS Foundations</strong> – Maven Silicon</li>
+          <li><strong>Basics of Physical Design</strong> – Maven Silicon</li>
+          <li><strong>VLSI Design with AI: Basics to Advanced</strong> – IITM Pravartak & Internshala</li>
+          <li><strong>VLSI Physical Design</strong> – Udemy</li>
+          <li><strong>Semiconductor Fabrication</strong> – Purdue University</li>
+          <li><strong>Basics of Fabrication</strong> – NIEIT, Calicut</li>
+        </ul>
+      </div>
+      
     </div>
+  </section>
 
-    <!-- Certificate Lightbox Modal -->
-    <div id="lightboxModal" class="modal-overlay">
-        <div class="modal-container lightbox-container">
-            <div class="modal-header" style="border-bottom: none; width: 100%; justify-content: flex-end; padding: 10px 20px 0;">
-                <button class="modal-close" id="closeLightboxModal" aria-label="Close Lightbox" style="color: #fff;">&times;</button>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-container">
+        <div class="contact-card card-reveal">
+          <p>Would you like to collaborate on semiconductor research, VLSI chip design, or discuss technical programs? Feel free to reach out!</p>
+          
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:mallik.palaparthi3@gmail.com">mallik.palaparthi3@gmail.com</a>
             </div>
-            <div class="modal-body" style="display: flex; flex-direction: column; align-items: center; padding: 10px 24px 24px;">
-                <img id="lightboxImg" class="lightbox-image" src="" alt="Certificate view">
-                <p id="lightboxCaption" class="lightbox-caption">Certificate validation description</p>
+            <div class="contact-info-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/918019847793">+91 8019847793</a>
             </div>
+          </div>
+          
+          <a href="https://wa.me/918019847793?text=Hello%20Mallikarjuna,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="btn btn-primary">
+            <i class="fa-solid fa-comments"></i> &nbsp;Get In Touch
+          </a>
         </div>
+      </div>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h3>PVSDD Mallikarjuna</h3>
+      <p>Founder & CEO | PrimeMOS Research & Solutions</p>
+      <p style="font-style: italic;">Advancing Semiconductor Innovation Through Research & Education</p>
+      <div class="footer-bottom">
+        &copy; 2026 PVSDD Mallikarjuna. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Typing and Reveal Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
