@@ -274,17 +274,19 @@ nav {
   position: fixed;
   inset: 0;
   background: rgba(15, 23, 42, 0.35);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   z-index: 998;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .nav-overlay.active {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 /* Hero Section with Mesh Gradient */
@@ -738,11 +740,13 @@ footer .footer-bottom {
     padding: 1.5rem 2rem;
     gap: 1.25rem;
     z-index: 1002; /* Layer above overlay */
-    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden; /* Hide off-screen interaction */
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s ease;
   }
 
   .nav-links.active {
     right: 0; /* Slide in drawer */
+    visibility: visible;
   }
 
   .nav-links li {
