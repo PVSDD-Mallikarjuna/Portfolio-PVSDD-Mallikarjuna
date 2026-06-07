@@ -285,8 +285,6 @@ nav {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 }
 
 /* Hero Section with Mesh Gradient */
@@ -723,7 +721,7 @@ footer .footer-bottom {
   }
 
   .nav-overlay {
-    z-index: 1001; /* Layer above header navbar */
+    z-index: 999; /* Below header navbar (1000) so drawer links are clickable */
   }
 
   .nav-links {
